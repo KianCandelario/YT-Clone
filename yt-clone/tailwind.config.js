@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'youtube-red': '#FF0000',
+        'almost-black': '#282828',
+      },
+    },
   },
   plugins: [],
 }
