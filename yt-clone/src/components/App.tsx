@@ -1,8 +1,13 @@
+import Header from './Header.tsx';
 function App() {
 
   return (
     <>
-      <h1 className='text-lg text-slate-700'>Hello World</h1>
+      <div className='w-screen h-screen'>
+        <div className='bg- w-full h-[7%]'>
+          <Header />
+        </div>
+      </div>
     </>
   )
 }
