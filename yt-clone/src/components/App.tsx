@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div className='w-screen h-screen'>
-        <div className='bg- w-full h-[7%]'>
+        <div className='w-full h-[7%]'>
           <Header />
         </div>
       </div>
