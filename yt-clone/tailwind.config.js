@@ -10,6 +10,10 @@ export default {
         'youtube-red': '#FF0000',
         'almost-black': '#282828',
       },
+      fontFamily: {
+        'league-gothic': ['League Gothic', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+      }
     },
   },
   plugins: [],
