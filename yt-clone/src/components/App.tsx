@@ -1,11 +1,15 @@
 import Header from './Header.tsx';
+import HorizontalScroller from './HorizontalScroller.tsx';
 function App() {
 
   return (
     <>
-      <div className='w-screen h-screen'>
-        <div className='w-full h-[7%]'>
+      <div className='box-border w-screen h-screen'>
+        <div className='w-full h-[7%] border-b border-gray-lines'>
           <Header />
+        </div>
+        <div className='w-full h-[6%]'>
+          <HorizontalScroller />
         </div>
       </div>
     </>
