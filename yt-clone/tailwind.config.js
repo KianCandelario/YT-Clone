@@ -9,6 +9,7 @@ export default {
       colors: {
         'youtube-red': '#FF0000',
         'almost-black': '#282828',
+        'gray-lines': '#585659',
       },
       fontFamily: {
         'league-gothic': ['League Gothic', 'sans-serif'],
