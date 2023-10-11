@@ -1,20 +1,22 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header.tsx';
-import HorizontalScroller from './HorizontalScroller.tsx';
-import VerticalScroller from './VerticalScroller.tsx';
+import Feed from './Feed.tsx';
+import VideoDetails from './VideoDetails.tsx';
+import SearchFeed from './SearchFeed.tsx';
+
 function App() {
 
   return (
     <>
       <div className='box-border w-screen h-screen bg-almost-black'>
-        <div className='w-full h-[7%] border-b border-gray-lines'>
+        <BrowserRouter>
           <Header />
-        </div>
-        <div className='w-full h-[6%] mb-[0.10rem]'>
-          <HorizontalScroller />
-        </div>
-        <div className='w-full h-[87%] overflow-y-scroll'>
-          <VerticalScroller />
-        </div>
+          <Routes>
+            <Route path="/" element={ <Feed /> } />
+            <Route  path="/video/:id" element={<VideoDetails />} />
+            <Route path="/search/:searchedWord" element={<SearchFeed />}  />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   )
