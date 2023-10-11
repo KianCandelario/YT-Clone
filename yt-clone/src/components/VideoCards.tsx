@@ -1,4 +1,12 @@
-function VideoCards() {
+type videoProps = {
+    videos: Array<Object>;
+}
+
+function VideoCards(props: videoProps) {
+    const { videos } = props
+
+    console.log(videos)
+
     return(
         <>
             <div className="h-64 w-full bg-gray-lines mb-3">
@@ -8,7 +16,7 @@ function VideoCards() {
                 <div className="flex justify-center">
                     <div className="w-[90%] text-white">
                         <div className="text-sm font-bold mb-1 mt-3">
-                            <p>Jordan Peterson - The Best Way to Show Someone You Do Care</p>
+                            <p>{}</p>
                         </div>
                         <div className="text-xs text-silver">
                             <p>The Bests</p>
