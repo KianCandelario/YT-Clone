@@ -1,4 +1,5 @@
 import axios from 'axios';
+import urlJoin from 'url-join';
 
 const BASE_API_URL = 'https://youtube-v31.p.rapidapi.com'
 
@@ -8,13 +9,14 @@ const options = {
       maxResults: '50'
     },
     headers: {
-      'X-RapidAPI-Key': import.meta.env.REACT_RAPID_API_KEY,
+      'X-RapidAPI-Key': '93f5b9949fmshf32f0a830e4470ap184110jsnbb042ab08ff0',
       'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
 };
 
-export const fetchAPI = async (url: string) => {
-    const { data } = await axios.get(`${BASE_API_URL}/${url}`, options);
+export const fetchAPI = async (url: any) => {
+    const apiUrl = urlJoin(BASE_API_URL, url)
+    const { data } = await axios.get(apiUrl, options);
 
     return data;
 }
