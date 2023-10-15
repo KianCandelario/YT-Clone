@@ -1,4 +1,5 @@
 export const categories = [
+    { name: 'All', path: '../src/assets/nav-icons/all-icon.svg' },
     { name: 'Coding', path: '../src/assets/nav-icons/code-icon.svg'},
     { name: 'Music', path: '../src/assets/nav-icons/music-icon.svg'},
     { name: 'Education', path: '../src/assets/nav-icons/education-icon.svg'},
